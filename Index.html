@@ -16,7 +16,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 1750px}
+    .row.content {height: 800px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -53,6 +53,12 @@
         <span class="icon-bar"></span>                        
       </button>
     </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="experiment.html">Experiment</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <div class="container-fluid text-center">    
@@ -62,23 +68,23 @@
      <h3>Collected Data</h3>
      <div class="well">
         <p></p>
-      <p><a href="./commit_InternalQA.csv">Commits Containing Internal Quality Attributes</a></p>
+      <p><a href="./commit_InternalQA_update.csv">Commits Containing Internal Quality Attributes</a></p>
     </div>
   <div class="well">
         <p></p>
-      <p><a href="./commit_ExternalQA.csv">Commits Containing External Quality Attributes</a></p>
+      <p><a href="./commit_ExternalQA_update.csv">Commits Containing External Quality Attributes</a></p>
     </div>
   <div class="well">
         <p></p>
-      <p><a href="./commit_CodeSmell.csv">Commits Containing Code Smells</a></p>
+      <p><a href="./commit_CodeSmell_update.csv">Commits Containing Code Smells</a></p>
     </div>
     <div class="well">
         <p></p>
-      <p><a href="./commit_with_refactor_keyword.csv">Commits Labeled "Refactor"</a></p>
+      <p><a href="./commit_with_refactor_keyword_update.csv">Commits Labeled "Refactor"</a></p>
     </div>
     <div class="well">
         <p></p>
-      <p><a href="./commit_without_refactor_keyword.csv">Commits Unlabeled "Refactor"</a></p>
+      <p><a href="./commit_without_keyword_refactor_update.csv">Commits Unlabeled "Refactor"</a></p>
     </div>
     </div>
 
@@ -86,7 +92,7 @@
     <div class="col-sm-8 text-left"> 
       <h1>Can Refactoring be Self-Affirmed? An Exploratory Study on How Developers Document their Refactoring Activities in Commit Messages</h1>
       <hr>
-      <p>In this empirical study, we examined refactoring activities to explor how developers document their refactoring activities during
+      <p>In this empirical study, we examined refactoring activities to explore how developers document their refactoring activities during
 the software life-cycle. Then we extract the rationale behind the applied refactorings, e.g.,
 fixing code smells or improving specific quality attributes. Our approach relies on text mining refactoring-related change
 messages and identifying refactoring patterns by only considering
@@ -108,9 +114,11 @@ more refactoring activity than those without the label?</strong></p>
 </br>
 <p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
 <hr>
+<!--
 <div style="text-align: center" >
 
 <img src="./pattern.PNG" height="1000" width="1000"></div>
+-->
 <!--
 <div style="text-align: center" >
                                     
@@ -138,7 +146,7 @@ w3IncludeHTML();
 </script>                             
 </div>
 -->
-      <hr>
+      
       <h3>Related Paper</h3>
       <p>Eman Abdullah AlOmar, Mohamed Wiem Mkaouer, and Ali Ouni, "Can  refactoring  be  self-affirmed? an  exploratory  study  on  how  developers  document  their  refactoring  activities in  commit  messages", the 3nd  International  Workshop  on Refactoring (IWoR'2019). <a href="./IWoR_Manuscript.pdf">[preprint]</a></p>
     </div>
