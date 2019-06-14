@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Example</title>
+  <title>main page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 800px}
+    .row.content {height: 900px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -42,8 +42,8 @@
     }
   </style>
 </head>
-<body>
-
+<body>>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -55,100 +55,59 @@
     </div>
 <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Index.html">Home</a></li>
-        <li class="active"><a href="experiment.html">Experiment</a></li>
+        <li class="active"><a href="#"></a></li>
+        <li class="active"><a href="#"></a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+
 <div class="container-fluid text-center">    
   <div class="row content">
 
     <div class="col-sm-2 sidenav">
-     <h3>Collected Data</h3>
-     <div class="well">
-        <p></p>
-      <p><a href="./commit_InternalQA_update.csv">Commits Containing Internal Quality Attributes</a></p>
     </div>
-  <div class="well">
-        <p></p>
-      <p><a href="./commit_ExternalQA_update.csv">Commits Containing External Quality Attributes</a></p>
-    </div>
-  <div class="well">
-        <p></p>
-      <p><a href="./commit_CodeSmell_update.csv">Commits Containing Code Smells</a></p>
-    </div>
-    <div class="well">
-        <p></p>
-      <p><a href="./commit_with_refactor_keyword_update.csv">Commits Labeled "Refactor"</a></p>
-    </div>
-    <div class="well">
-        <p></p>
-      <p><a href="./commit_without_keyword_refactor_update.csv">Commits Unlabeled "Refactor"</a></p>
-    </div>
-    </div>
-
     
+
     <div class="col-sm-8 text-left"> 
-      <h1>Can Refactoring be Self-Affirmed? An Exploratory Study on How Developers Document their Refactoring Activities in Commit Messages</h1>
-      <hr>
-      <p>In this empirical study, we examined refactoring activities to explore how developers document their refactoring activities during
-the software life-cycle. Then we extract the rationale behind the applied refactorings, e.g.,
-fixing code smells or improving specific quality attributes. Our approach relies on text mining refactoring-related change
-messages and identifying refactoring patterns by only considering
-refactoring commits.</p><br>
-      <p>More specifically, the research questions that we investigated are:</p>
-      <p><strong>RQ1. What patterns do developers use to describe their
-refactoring activities?</strong></p>
-      <p>Since there is no consensus on how to formally document the act of refactoring code, we mine in this research questions, patterns, using which developers have described their refactoring activities. The outcome of this research question enumerates the most popular text patterns used in the analyzed commit messages.</p>
-      <p><strong>RQ2. What are the quality issues that drive developers to refactor?</strong></p>
-      <p>In this research question, we investigate whether developers explicitly mention the purpose of their refactoring activity, e.g.,
-improving structural metrics of fixing code smells.</p>
-      <p><strong>RQ3. What are the top-10 patterns developers use to
-describe quality issues in their commits?</strong></p>
-      <p>we link between patterns extracted from the first research question and the quality issues found in the second question. We explore how developers express combining them
-to express their refactoring activity.</p>
-      <p><strong>RQ4. Do Commits containing the label "Refactor" indicate
-more refactoring activity than those without the label?</strong></p>
-      <p>We quantify the commit messages with the label "refactor" and without to compare between them.</p>
-</br>
-<p>If you are interested to learn more about the process we followed, please refer to our paper.</p>
+<div class="jumbotron">
+        <h1><center>Self-Affirmed Refactoring</center></h1>        
+</div>
+      <h3><a href="./IWoR19_Index.html">Can Refactoring be Self-Affirmed? An Exploratory Study on How Developers Document their Refactoring Activities in Commit Messages</a></h3>
+       <div id="sidebar" class="left">
+		
+		
+       <div id="main" class="right">
+      <p><img src=".\Images\Logo-SAR.png" width="256" height="248" align="left" alt="" />In this empirical study, we examined refactoring activities to explore how developers document their refactoring activities during
+the software life-cycle in the history of 3,795 well-engineered, open-source projects.</p><br>
+      <p>More specifically, we investigated the following research questions:</p>
+      <p><strong>RQ1.</strong> What patterns do developers use to describe their
+refactoring activities?</p>
+      <p><strong>RQ2.</strong> What are the quality issues that drive developers to refactor?</p>
+      <p><strong>RQ3.</strong> What are the top-10 patterns developers use to
+describe quality issues in their commits?</p>
+      <p><strong>RQ4.</strong> Do Commits containing the label "Refactor" indicate
+more refactoring activity than those without the label?</p>
+</div>
+</div>
+<br>
 <hr>
-<!--
-<div style="text-align: center" >
 
-<img src="./pattern.PNG" height="1000" width="1000"></div>
--->
-<!--
-<div style="text-align: center" >
-                                    
-<?php include_once "graph.php" ?>
-                              
+<h3><a href="./ESEM19_Index.html">On the Impact of Refactoring on the Relationship between Quality Attributes and Design Metrics</a></h3>
+   <div id="sidebar" class="left">
+			
+<div id="main" class="right">
+<p><img src=".\Images\SAR_BA.PNG" width="260" height="248" align="left" alt="" />Our empirical study focused on investigating whether the developer perception of quality
+improvement (as expected by developers) aligns with the
+real quality improvement (as assessed by quality metrics).</p><br>
+<p>In particular, we addressed the following research question:</p>
+<p><strong>RQ.</strong> Do the developer perception of quality improvement align
+with the quantitative assessment of code quality?</p>
 </div>
-<div style="text-align: center" >
- 
-<div id="SecondHTML">
 </div>
-</div>
-<script>
-$(function()
-{
-$("#SecondHTML").load("graph.html");
-});
-
-</script>
-<div style="text-align: center" >
-                                
-<hr>
-<div w3-include-html="graph.html"></div> 
-<script>
-w3IncludeHTML();
-</script>                             
-</div>
--->
-      
-      <h3>Related Paper</h3>
-      <p>Eman Abdullah AlOmar, Mohamed Wiem Mkaouer, and Ali Ouni, "Can  refactoring  be  self-affirmed? an  exploratory  study  on  how  developers  document  their  refactoring  activities in  commit  messages", the 3nd  International  Workshop  on Refactoring (IWoR'2019). <a href="./IWoR_Manuscript.pdf">[preprint]</a></p>
+<br><br><br><br><br>
+<hr>      
     </div>
     <div class="col-sm-2 sidenav">
     </div>
